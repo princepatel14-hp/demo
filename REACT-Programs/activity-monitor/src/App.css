@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f5f9;
+  color: #20283a;
+  font-family: Arial, sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.dashboard {
+  width: min(900px, 92%);
+  margin: 48px auto;
+}
+
+.header {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  color: #5367d9;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+}
+
+h1 {
+  margin: 8px 0 18px;
+}
+
+.username-label {
+  display: grid;
+  gap: 8px;
+  max-width: 260px;
+  font-size: 0.9rem;
+}
+
+input {
+  padding: 10px 12px;
+  border: 1px solid #d5dbea;
+  border-radius: 8px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.card,
+.controls {
+  padding: 22px;
+  border: 1px solid #e5e9f2;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 14px #1f2a4410;
+}
+
+.card h2,
+.control-group h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.value {
+  margin: 14px 0 4px;
+  color: #5367d9;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.description {
+  margin: 0;
+  color: #687187;
+  font-size: 0.9rem;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 16px;
+}
+
+.control-group {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  align-items: center;
+}
+
+.control-group h2 {
+  grid-column: 1 / -1;
+  margin-bottom: 4px;
+}
+
+button {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 8px;
+  background: #5367d9;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4053c1;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .controls {
+    display: grid;
+    gap: 24px;
+  }
+}

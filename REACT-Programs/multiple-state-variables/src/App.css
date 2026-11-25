@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f4f8;
+}
+
+.app {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.card {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #00000015;
+}
+
+.card p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.controls {
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+button,
+input {
+  margin: 6px;
+  padding: 10px 14px;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+}
